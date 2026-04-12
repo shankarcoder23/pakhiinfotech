@@ -1,0 +1,137 @@
+/* GLOBAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* NAVBAR */
+.custom-nav {
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.85);
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #ff6a00 !important;
+}
+
+/* HERO */
+.hero-section {
+  padding: 120px 0 80px;
+  background: linear-gradient(to right, #000, #111);
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-sub {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #ddd;
+}
+
+.hero-img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(255,106,0,0.2);
+}
+
+/* BUTTON */
+.modern-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #ff6a00;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.modern-btn:hover {
+  background: #e85d00;
+  transform: translateY(-3px);
+}
+
+/* SECTION */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #000;
+}
+
+/* GLASS CARD */
+.glass-card {
+  padding: 30px;
+  border-radius: 15px;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff6a00;
+}
+
+/* SERVICES */
+.service-card {
+  padding: 25px;
+  border-radius: 12px;
+  background: #000;
+  color: #fff;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.service-card:hover {
+  background: #ff6a00;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* CLIENT */
+.client-img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #ff6a00;
+}
+
+/* FORM */
+.modern-input {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.modern-input:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 5px rgba(255,106,0,0.3);
+}
+
+/* LIGHT BG */
+.light-bg {
+  background: #f8f8f8;
+}
+
+/* FOOTER */
+.footer {
+  padding: 30px 0;
+  background: #000;
+  color: #fff;
+}
+
+.footer p {
+  color: #ccc;
+}
