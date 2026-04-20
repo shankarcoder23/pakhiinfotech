@@ -157,7 +157,7 @@
         <div class="service-card p-3 shadow-sm h-100">
           
           <!-- Image -->
-          <img src="images/service1.png" class="img-fluid mb-3" alt="Service">
+          <img src="assets/image/service-img/website.jpg" class="img-fluid mb-3" alt="Service">
 
           <!-- Title -->
           <h5>Website Designing</h5>
@@ -175,18 +175,17 @@
       <!-- Duplicate and change content -->
       <div class="col-md-3">
         <div class="service-card p-3 shadow-sm h-100">
-          <img src="images/service2.png" class="img-fluid mb-3" alt="Service">
+          <img src="assets/image/service-img/web-dev.jpg" class="img-fluid mb-3" alt="Service">
           <h5>Web Development</h5>
           <p class="service-text short-text">
-            Write your service description here. You can add long content and it will automatically show read more option.
-          </p>
+            We understand better. We know that your business is successful for the right website, and will help us achieve our goals. Therefore our website development service is unmatched by the needs of your customers. We have additional mail to learn about your business, your customer's qualifications, and how you can make them more valuable by online omnipotence. Collaborate with us to create and solve a top-notch image for your business by showcasing your products worldwide.</p>
           <span class="read-more-btn">Read More</span>
         </div>
       </div>
 
       <div class="col-md-3">
         <div class="service-card p-3 shadow-sm h-100">
-          <img src="images/service3.png" class="img-fluid mb-3" alt="Service">
+          <img src="assets/image/service-img/app-development.jpg" class="img-fluid mb-3" alt="Service">
           <h5>Mobile App Development</h5>
           <p class="service-text short-text">
             Write your service description here. You can add long content and it will automatically show read more option.
@@ -197,7 +196,7 @@
 
       <div class="col-md-3">
         <div class="service-card p-3 shadow-sm h-100">
-          <img src="images/service4.png" class="img-fluid mb-3" alt="Service">
+          <img src="assets/image/service-img/social-media.jpg" class="img-fluid mb-3" alt="Service">
           <h5>Social Media Marketing</h5>
           <p class="service-text short-text">
             Write your service description here. You can add long content and it will automatically show read more option.
@@ -209,7 +208,7 @@
       <!--other-->
       <div class="col-md-3">
         <div class="service-card p-3 shadow-sm h-100">
-          <img src="images/service4.png" class="img-fluid mb-3" alt="Service">
+          <img src="assets/image/service-img/7.jpg" class="img-fluid mb-3" alt="Service">
           <h5>Wordpress Solution</h5>
           <p class="service-text short-text">
             Write your service description here. You can add long content and it will automatically show read more option.
@@ -221,8 +220,8 @@
         <!--other-->
       <div class="col-md-3">
         <div class="service-card p-3 shadow-sm h-100">
-          <img src="images/service4.png" class="img-fluid mb-3" alt="Service">
-          <h5>Wordpress Solution</h5>
+          <img src="assets/image/service-img/lms (2).jpg" class="img-fluid mb-3" alt="Service">
+          <h5>LMS Website</h5>
           <p class="service-text short-text">
             Write your service description here. You can add long content and it will automatically show read more option.
           </p>
@@ -233,8 +232,8 @@
      <!--other-->
       <div class="col-md-3">
         <div class="service-card p-3 shadow-sm h-100">
-          <img src="images/service4.png" class="img-fluid mb-3" alt="Service">
-          <h5>Wordpress Solution</h5>
+          <img src="assets/image/service-img/lms.jpg" class="img-fluid mb-3" alt="Service">
+          <h5>School/College Website</h5>
           <p class="service-text short-text">
             Write your service description here. You can add long content and it will automatically show read more option.
           </p>
@@ -246,7 +245,7 @@
       <div class="col-md-3">
         <div class="service-card p-3 shadow-sm h-100">
           <img src="images/service4.png" class="img-fluid mb-3" alt="Service">
-          <h5>Wordpress Solution</h5>
+          <h5>E Commerce Website Design/Development</h5>
           <p class="service-text short-text">
             Write your service description here. You can add long content and it will automatically show read more option.
           </p>
@@ -263,7 +262,8 @@
   <div class="container text-center">
     <h2 class="section-title">Our Clients</h2>
 
-    <div class="row g-4 mt-4">
+    <!-- Desktop View (Grid) -->
+    <div class="row g-4 mt-4 d-none d-md-flex">
       <div class="col-md-4">
         <div class="glass-card">
           <img src="https://randomuser.me/api/portraits/men/32.jpg" class="client-img">
@@ -288,6 +288,46 @@
         </div>
       </div>
     </div>
+
+    <!-- Mobile View (Carousel) -->
+    <div id="clientCarousel" class="carousel slide d-md-none mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="glass-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="client-img">
+            <h6>Rahul Sharma</h6>
+            <p>"Great service and support!"</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="glass-card">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="client-img">
+            <h6>Priya Das</h6>
+            <p>"Amazing design and experience."</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="glass-card">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg" class="client-img">
+            <h6>Amit Roy</h6>
+            <p>"Highly recommended company."</p>
+          </div>
+        </div>
+
+      </div>
+
+   <!-- Modern Controls -->
+<button class="carousel-control-prev custom-btn" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+  <span class="custom-icon">&#10094;</span>
+</button>
+
+<button class="carousel-control-next custom-btn" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+  <span class="custom-icon">&#10095;</span>
+</button>
+
   </div>
 </section>
 

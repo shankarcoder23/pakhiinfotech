@@ -371,6 +371,15 @@ body {
   font-weight: 500;
 }
 
+.service-card img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+}
+
 /* ================= CLIENT ================= */
 .client-img {
   width: 70px;
@@ -394,6 +403,51 @@ body {
 /* ================= BG ================= */
 .light-bg {
   background: #f8f8f8;
+}
+.glass-card {
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+/* Modern Slider Buttons */
+.custom-btn {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+  background: #1e57b6;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.custom-icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Position Fix */
+.carousel-control-prev {
+  left: -10px;
+}
+
+.carousel-control-next {
+  right: -10px;
 }
 
 /* ================= FOOTER ================= */
