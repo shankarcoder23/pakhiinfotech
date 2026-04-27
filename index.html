@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
         <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
@@ -270,109 +270,196 @@
   </div>
 </section>
 
-<!-- CLIENTS -->
-<section class="section">
+<section class="section client-modern-section py-5">
   <div class="container text-center">
-    <h2 class="section-title">Our Clients</h2>
+    <h2 class="section-title fw-bold">Our Clients</h2>
+    <p class="text-muted">What our clients say about us</p>
 
-    <!-- Desktop View (Grid) -->
+    <!-- DESKTOP GRID -->
     <div class="row g-4 mt-4 d-none d-md-flex">
+
       <div class="col-md-4">
-        <div class="glass-card">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="client-img">
-          <h6>Rahul Sharma</h6>
+        <div class="client-modern-card p-4">
+          <div class="client-modern-img-wrap">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="client-modern-img">
+          </div>
+          <h6 class="fw-semibold">Rahul Sharma</h6>
           <p>"Great service and support!"</p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="glass-card">
-          <img src="https://randomuser.me/api/portraits/women/45.jpg" class="client-img">
-          <h6>Priya Das</h6>
+        <div class="client-modern-card p-4">
+          <div class="client-modern-img-wrap">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="client-modern-img">
+          </div>
+          <h6 class="fw-semibold">Priya Das</h6>
           <p>"Amazing design and experience."</p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="glass-card">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" class="client-img">
-          <h6>Amit Roy</h6>
+        <div class="client-modern-card p-4">
+          <div class="client-modern-img-wrap">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg" class="client-modern-img">
+          </div>
+          <h6 class="fw-semibold">Amit Roy</h6>
           <p>"Highly recommended company."</p>
         </div>
       </div>
+
     </div>
 
-    <!-- Mobile View (Carousel) -->
-    <div id="clientCarousel" class="carousel slide d-md-none mt-4" data-bs-ride="carousel">
+    <!-- MOBILE CAROUSEL -->
+    <div id="clientMobileSlider" class="carousel slide d-md-none mt-4" data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#clientMobileSlider" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#clientMobileSlider" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#clientMobileSlider" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <div class="glass-card">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="client-img">
-            <h6>Rahul Sharma</h6>
+          <div class="client-modern-card p-4">
+            <div class="client-modern-img-wrap">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="client-modern-img">
+            </div>
+            <h6 class="fw-semibold">Rahul Sharma</h6>
             <p>"Great service and support!"</p>
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="glass-card">
-            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="client-img">
-            <h6>Priya Das</h6>
+          <div class="client-modern-card p-4">
+            <div class="client-modern-img-wrap">
+              <img src="https://randomuser.me/api/portraits/women/45.jpg" class="client-modern-img">
+            </div>
+            <h6 class="fw-semibold">Priya Das</h6>
             <p>"Amazing design and experience."</p>
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="glass-card">
-            <img src="https://randomuser.me/api/portraits/men/65.jpg" class="client-img">
-            <h6>Amit Roy</h6>
+          <div class="client-modern-card p-4">
+            <div class="client-modern-img-wrap">
+              <img src="https://randomuser.me/api/portraits/men/65.jpg" class="client-modern-img">
+            </div>
+            <h6 class="fw-semibold">Amit Roy</h6>
             <p>"Highly recommended company."</p>
           </div>
         </div>
 
       </div>
 
-   <!-- Modern Controls -->
-<button class="carousel-control-prev custom-btn" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
-  <span class="custom-icon">&#10094;</span>
-</button>
+      <!-- Controls -->
+      <button class="carousel-control-prev client-slider-btn" type="button" data-bs-target="#clientMobileSlider" data-bs-slide="prev">
+        <span class="client-slider-icon">&#10094;</span>
+      </button>
 
-<button class="carousel-control-next custom-btn" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
-  <span class="custom-icon">&#10095;</span>
-</button>
+      <button class="carousel-control-next client-slider-btn" type="button" data-bs-target="#clientMobileSlider" data-bs-slide="next">
+        <span class="client-slider-icon">&#10095;</span>
+      </button>
+
+    </div>
 
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section light-bg">
-  <div class="container text-center">
-    <h2 class="section-title">Have Any Project On Mind? Contact Us!</h2>
-    <p class="mb-4">If you have any projects in mind, contact us and solve them.</p>
+<section class="contact-hero-section">
+  <div class="container">
+    <div class="contact-hero-box">
+      <div class="row align-items-center">
 
-    <form class="row g-3 justify-content-center">
-      <div class="col-md-4">
-        <input type="text" class="form-control modern-input" placeholder="Your Name">
+        <!-- IMAGE (comes first on mobile) -->
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <img src="" 
+               alt="Contact" 
+               class="contact-hero-img">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col-md-6 text-center text-md-start order-2 order-md-1">
+          <h1 class="contact-hero-title">
+            Have Any Project On Mind?<br>Contact Us!
+          </h1>
+
+          <p class="contact-hero-text">
+            If you have any projects in mind, contact us and solve the projects in your mind. 
+            Do not hesitate to contact us.
+          </p>
+
+          <a href="#" class="contact-hero-btn">Send Message</a>
+        </div>
+
       </div>
-      <div class="col-md-4">
-        <input type="email" class="form-control modern-input" placeholder="Your Email">
-      </div>
-      <div class="col-md-8">
-        <textarea class="form-control modern-input" rows="4" placeholder="Message"></textarea>
-      </div>
-      <div class="col-md-8">
-        <button class="btn modern-btn w-100">Send Message</button>
-      </div>
-    </form>
+    </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container text-center">
-    <h5>PakhiInfotech</h5>
-    <p>Software Solutions Company</p>
-    <p>© 2026 All Rights Reserved</p>
+<!-- MODERN FOOTER -->
+<footer class="footer-modern">
+  <div class="container">
+    <div class="row g-4 text-center text-md-start">
+
+      <!-- BRAND -->
+      <div class="col-md-4">
+        <h4 class="footer-logo">PakhiInfotech</h4>
+        <p class="footer-desc">
+          Delivering modern software solutions to help businesses grow digitally with innovation and reliability.
+        </p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-2">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Services</h6>
+        <ul class="footer-links">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Mobile App Development</a></li>
+          <li><a href="#">LMS Website</a></li>
+          <li><a href="#">E commerce Website</a></li>
+          <li><a href="#">School/College Web Design & Development</a></li>
+          <li><a href="#">WordPress Solution</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Contact</h6>
+        <p>Email: info@pakhiinfotech.com</p>
+        <p>Phone: +91 9876543210</p>
+
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bottom text-center mt-4">
+      <p>© 2026 PakhiInfotech. All Rights Reserved.</p>
+    </div>
   </div>
 </footer>
 
