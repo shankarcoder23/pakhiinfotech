@@ -125,115 +125,264 @@ body {
   transform: translateX(100%);
   transition: transform 0.4s ease-in-out;
 }
-
-/* ================= HERO ================= */
+/* HERO SECTION BASE */
 .hero-section {
-  min-height: 100vh;
   position: relative;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  color: #fff;
+  overflow: hidden;
 }
 
+/* BACKGROUND IMAGE */
 .hero-bg-img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.hero-section::after {
-  content: "";
+/* OVERLAY */
+.hero-overlay {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
-}
-
-.hero-glass-card {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
   z-index: 2;
-  padding: 50px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(15px);
 }
 
+/* CONTENT */
+.hero-section .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* GLASS CARD */
+.hero-glass-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 50px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  transition: 0.3s;
+}
+
+/* TITLE */
 .hero-title {
   font-size: 48px;
   font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
 }
 
+/* SUBTEXT */
 .hero-sub {
+  font-size: 18px;
   color: #ddd;
-  margin: 15px 0;
+  margin: 15px 0 25px;
 }
 
 /* BUTTON */
 .modern-btn {
-  background: linear-gradient(45deg,#ff6a00,#ff9d00);
-  color: #fff;
-  padding: 12px 28px;
+  padding: 12px 30px;
   border-radius: 30px;
+  background: linear-gradient(45deg, #000000, #fd8803);
+  color: #fff;
   border: none;
+  font-weight: 500;
   transition: 0.3s;
 }
 
 .modern-btn:hover {
   transform: translateY(-3px);
-  background: linear-gradient(45deg,#1352a5,#1e57b6);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
+
+/* ================= MOBILE OPTIMIZATION ================= */
+@media (max-width: 768px) {
+
+  .hero-section {
+    padding: 60px 15px;
+    min-height: auto;
+  }
+
+  .hero-glass-card {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    margin: 10px 0 20px;
+  }
+
+  .modern-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+  }
+
+}
+
+
 
 /* ================= WHY ================= */
 .why-section {
   position: relative;
   color: #fff;
+  padding: 100px 0;
+  overflow: hidden;
 }
 
+/* BACKGROUND */
 .why-bg-img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: scale(1.05);
 }
 
+/* OVERLAY (UPGRADED GRADIENT) */
 .why-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.75);
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.85),
+    rgba(12, 98, 179, 0.89)
+  );
+  z-index: 2;
 }
 
+/* CONTENT */
 .why-section .container {
   position: relative;
+  z-index: 3;
 }
 
+/* TITLE */
 .section-title {
   font-weight: 700;
+  font-size: 40px;
 }
 
+.section-title span {
+  background: linear-gradient(45deg, #ff7300, #f1ede7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARD */
 .modern-card {
-  padding: 30px;
+  padding: 35px 25px;
   border-radius: 18px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(15px);
-  transition: 0.3s;
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
 }
 
+/* SOFT LIGHT EFFECT (MORE PREMIUM THAN HARD GLOW) */
+.modern-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.15), transparent 60%);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* HOVER */
 .modern-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
 }
 
+.modern-card:hover::before {
+  opacity: 1;
+}
+
+/* ICON BOX */
 .icon-box {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   border-radius: 50%;
-  background: linear-gradient(45deg,#ff6a00,#ff9d00);
+  background: linear-gradient(45deg,#0d6efd,#6f42c1);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 26px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
 }
 
+/* ICON HOVER */
+.modern-card:hover .icon-box {
+  transform: scale(1.1) rotate(8deg);
+}
+
+/* TEXT */
+.modern-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modern-card p {
+  font-size: 15px;
+  color: #e6e6e6;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .why-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .modern-card {
+    padding: 25px 20px;
+  }
+
+  .icon-box {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+}
 /* ================= SERVICES ================= */
 .light-bg {
   background: #000000;
@@ -246,7 +395,7 @@ body {
   position: relative;
 
   /* Black → Orange Gradient */
-   background: linear-gradient(135deg, #4e5155ad, #0f0f0ff3, rgba(250, 102, 3, 0.781));
+   background: linear-gradient(135deg, #1b61b1, rgb(0, 0, 0));
   
   color: #fff;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -293,7 +442,7 @@ body {
 
 .service-content h5 {
   font-weight: 600;
-  color: #fff;
+  color: #ff7b00;
 }
 
 .service-content p {
@@ -301,15 +450,7 @@ body {
   color: #ddd;
 }
 
-/* Optional accent line */
-.service-content h5::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin-top: 8px;
-  background: linear-gradient(90deg, #ff6a00, #ffa500);
-}
+
 /* ================= CLIENT ================= */
 .client-modern-section {
  background: linear-gradient(135deg, #101111, #787a80f3, rgb(250, 102, 3));
