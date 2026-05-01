@@ -203,6 +203,9 @@ body {
 
 /* ================= MOBILE OPTIMIZATION ================= */
 @media (max-width: 768px) {
+  .hero-overlay {
+    margin-left: -15px;
+  }
 
   .hero-section {
     padding: 60px 15px;
